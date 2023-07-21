@@ -33,6 +33,13 @@ function change(value, tag_id)
         operation = "div";
     }
 
+    if (tag_id == "clear") {
+        x = 0;
+        y = 0;
+        operation = "";
+        document.getElementById("display").innerHTML = 0;
+    }
+
     if (tag_id == "equals" && value == 0) {
         if (operation == "add") {
             document.getElementById("display").innerHTML = x+y;         
